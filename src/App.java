@@ -3,33 +3,39 @@ import java.util.Arrays;
 public class App {
     public static void main(String[] args) {
 
-        int a1[] = {1};
-        int a2[] = {1};
-        int b1[] = {9,2,7};
-        int b2[] = {2,1,2};
-        int c1[] = {0,10, 100};
-        int c2[] = {1, 1, 2};
-        int d1[] = {45,23, 83};
-        int d2[] = {2,2,2};
-        int e1[] = {10,2, 8};
-        int e2[] = {2,1,2};
-        int f1[] = {11329,493, 232};
-        int f2[] = {1,3,3};
-        int g1[] = {120,11, 8};
-        int g2[] = {3,2,1};
-        int h1[] = {11329,493, 232};
-        int h2[] = {5, 3, 3};
+        int a1[] = { 1 };
+        int a2[] = { 1 };
+        int b1[] = { 9, 2, 7 };
+        int b2[] = { 2, 1, 2 };
+        int c1[] = { 0, 10, 100 };
+        int c2[] = { 1, 1, 2 };
+        int d1[] = { 45, 23, 83 };
+        int d2[] = { 2, 2, 2 };
+        int e1[] = { 10, 2, 8 };
+        int e2[] = { 2, 1, 2 };
+        int f1[] = { 11329, 493, 232 };
+        int f2[] = { 1, 3, 3 };
+        int g1[] = { 120, 11, 8 };
+        int g2[] = { 3, 2, 1 };
+        int h1[] = { 11329, 493, 232 };
+        int h2[] = { 5, 3, 3 };
 
-        int[] arr1 = {1, 2, 3, 4, 5, 6, 7, 8, 9};
-        int[] arr2 = {1, 1, 1, 3, 3, 3, 1, 1, 1};
-        int[] arr3 = {0, 9, 8, 7, 6, 5, 5, 5, 6, 7, 8, 9, 0};
-        int[] arr4 = {0, 9, 8, 7, 6, 5, 5, 5, 6, 8, 9, 0, 0};
-        int[] arr5 = {45, 32, 3, 52, 92, 72, 5, 12, 73};
+        int[] arr1 = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+        int[] arr2 = { 1, 1, 1, 3, 3, 3, 1, 1, 1 };
+        int[] arr3 = { 0, 9, 8, 7, 6, 5, 5, 5, 6, 7, 8, 9, 0 };
+        int[] arr4 = { 0, 9, 8, 7, 6, 5, 5, 5, 6, 8, 9, 0, 0 };
+        int[] arr5 = { 45, 32, 3, 52, 92, 72, 5, 12, 73 };
         
-        double a[] = {1.5, 3, 4.5};
-        double b[] = {1.5, 3, 4.5, 2};
-        double c[] = { 1.5 };
-
+        double a[] = { 1.5, 3, 4.5 };
+        double b[] = { 1.5, 3, 4.5, 2 };
+        double c[] = {  1.5  };
+        
+        int k1[] = { -10, -5, 0, 5, 10, 15 };
+        int k2[] = { 1, 1, 1, 1, 1, 1, 1, 0 };
+        int k3[] = { 8, 6, 4, 6, 4, 2, 0, -2, 0 };
+        int k4[] = { 8, 6, 4, 6, 8, 2, 0, -2, 0 };
+        int k5[] = { 0, 9 };
+        int k6[] = { 0 };
 
          
         // Mul
@@ -52,7 +58,7 @@ public class App {
         System.out.println("For call reverseArray(arr3 = " + Arrays.toString(arr3) + "), result is arr3 = " + Arrays.toString(ReverseArray.reverseArray(arr3)));
         System.out.println("For call reverseArray(arr4 = " + Arrays.toString(arr4) + "), result is arr4 = " + Arrays.toString(ReverseArray.reverseArray(arr4)));
         System.out.println("For call reverseArray(arr5 = " + Arrays.toString(arr5) + "), result is arr5 = " + Arrays.toString(ReverseArray.reverseArray(arr5)));
-         
+        
                    
         // DigitTracker  
         System.out.println("For call digitTracker(a1 = " + Arrays.toString(a1) + ", a2 = " + Arrays.toString(a2) + "), result is " + DigitTracker.digitTracker(a1, a2)  + ".\tExpecting: " + true);
@@ -65,6 +71,24 @@ public class App {
         System.out.println("For call digitTracker(h1 = " + Arrays.toString(h1) + ", h2 = " + Arrays.toString(h2) + "), result is " + DigitTracker.digitTracker(h1, h2)  + ".\tExpecting: " + true);
          
 
+        // KArray
+        System.out.println("For call kArray(arr = " + Arrays.toString(k1) + "), result is " + KArray.kArray(k1) + ".\tExpecting: " + true);
+        System.out.println("For call kArray(arr = " + Arrays.toString(k2) + "), result is " + KArray.kArray(k2) + ".\tExpecting: " + false);
+        System.out.println("For call kArray(arr = " + Arrays.toString(k3) + "), result is " + KArray.kArray(k3) + ".\tExpecting: " + true);
+        System.out.println("For call kArray(arr = " + Arrays.toString(k4) + "), result is " + KArray.kArray(k4) + ".\tExpecting: " + false);
+        System.out.println("For call kArray(arr = " + Arrays.toString(k5) + "), result is " + KArray.kArray(k5) + ".\tExpecting: " + true);
+        System.out.println("For call kArray(arr = " + Arrays.toString(k6) + "), result is " + KArray.kArray(k6) + ".\tExpecting: " + true);
+
+
+        // Smallest
+        System.out.println("For call smallest(arr = " + Arrays.toString(k1) + "), result is " + Smallest.smallest(k1) + ".\tExpecting: " + 0);
+        System.out.println("For call smallest(arr = " + Arrays.toString(k2) + "), result is " + Smallest.smallest(k2) + ".\tExpecting: " + 7);
+        System.out.println("For call smallest(arr = " + Arrays.toString(k3) + "), result is " + Smallest.smallest(k3) + ".\tExpecting: " + 7);
+        System.out.println("For call smallest(arr = " + Arrays.toString(k4) + "), result is " + Smallest.smallest(k4) + ".\tExpecting: " + 7);
+        System.out.println("For call smallest(arr = " + Arrays.toString(k5) + "), result is " + Smallest.smallest(k5) + ".\tExpecting: " + 0);
+        System.out.println("For call smallest(arr = " + Arrays.toString(k6) + "), result is " + Smallest.smallest(k6) + ".\tExpecting: " + 0);
+
+        
         // Palindrome
         System.out.println(Palindrome.isPalindrome(arr1));
         System.out.println(Palindrome.isPalindrome(arr2));
