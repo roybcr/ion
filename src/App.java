@@ -25,6 +25,18 @@ public class App {
         int[] arr3 = { 0, 9, 8, 7, 6, 5, 5, 5, 6, 7, 8, 9, 0 };
         int[] arr4 = { 0, 9, 8, 7, 6, 5, 5, 5, 6, 8, 9, 0, 0 };
         int[] arr5 = { 45, 32, 3, 52, 92, 72, 5, 12, 73 };
+
+        int[] q1 = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+        int[] q2 = { 1, 1, 1, 3, 3, 3, 1, 1, 1 };
+        int[] q3 = { 0, 9, 8, 7, 6, 5, 5, 5, 6, 7, 8, 9, 0 };
+        int[] q4 = { 0, 9, 8, 7, 6, 5, 5, 5, 6, 8, 9, 0, 0 };
+        int[] q5 = { 45, 32, 3, 52, 92, 72, 5, 12, 73 };
+        
+        int[] r1 = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+        int[] r2 = { 1, 1, 1, 3, 3, 3, 1, 1, 1 };
+        int[] r3 = { 0, 9, 8, 7, 6, 5, 5, 5, 6, 7, 8, 9, 0 };
+        int[] r4 = { 0, 9, 8, 7, 6, 5, 5, 5, 6, 8, 9, 0, 0 };
+        int[] r5 = { 45, 32, 3, 52, 92, 72, 5, 12, 73 };
         
         double a[] = { 1.5, 3, 4.5 };
         double b[] = { 1.5, 3, 4.5, 2 };
@@ -37,6 +49,11 @@ public class App {
         int k5[] = { 0, 9 };
         int k6[] = { 0 };
 
+        int[] qP1 = { 3, 7, 11, 19, 19, 7, 11, 3, 11, 3, 19, 7 };
+        int[] qP2 = { 3, 7, 11, 19, 3, 19, 11, 3, 11, 3, 19, 7 };
+        int[] qP3 = { 3, 7, 11, 19, 13, 19, 11, 3, 11, 3, 19, 7 };
+        int[] qP4 = {3, 7 ,11, 19};
+
          
         // Mul
         System.out.println("For call mul(a = " + Arrays.toString(a) + "), result is " + Mul.mul(a));
@@ -45,19 +62,19 @@ public class App {
 
          
         // QuickSort
-        System.out.println("For call quickSort(arr = " + Arrays.toString(arr1) + "), result is " + Arrays.toString(QuickSort.quickSort(arr1)));
-        System.out.println("For call quickSort(arr = " + Arrays.toString(arr2) + "), result is " + Arrays.toString(QuickSort.quickSort(arr2)));
-        System.out.println("For call quickSort(arr = " + Arrays.toString(arr3) + "), result is " + Arrays.toString(QuickSort.quickSort(arr3)));
-        System.out.println("For call quickSort(arr = " + Arrays.toString(arr4) + "), result is " + Arrays.toString(QuickSort.quickSort(arr4)));
-        System.out.println("For call quickSort(arr = " + Arrays.toString(arr5) + "), result is " + Arrays.toString(QuickSort.quickSort(arr5)));
+        System.out.println("For call quickSort(arr = " + Arrays.toString(q1) + "), result is " + Arrays.toString(QuickSort.quickSort(q1)));
+        System.out.println("For call quickSort(arr = " + Arrays.toString(q2) + "), result is " + Arrays.toString(QuickSort.quickSort(q2)));
+        System.out.println("For call quickSort(arr = " + Arrays.toString(q3) + "), result is " + Arrays.toString(QuickSort.quickSort(q3)));
+        System.out.println("For call quickSort(arr = " + Arrays.toString(q4) + "), result is " + Arrays.toString(QuickSort.quickSort(q4)));
+        System.out.println("For call quickSort(arr = " + Arrays.toString(q5) + "), result is " + Arrays.toString(QuickSort.quickSort(q5)));
          
          
         // ReverseArray
-        System.out.println("For call reverseArray(arr1 = " + Arrays.toString(arr1) + "), result is arr1 = " + Arrays.toString(ReverseArray.reverseArray(arr1)));
-        System.out.println("For call reverseArray(arr2 = " + Arrays.toString(arr2) + "), result is arr2 = " + Arrays.toString(ReverseArray.reverseArray(arr2)));
-        System.out.println("For call reverseArray(arr3 = " + Arrays.toString(arr3) + "), result is arr3 = " + Arrays.toString(ReverseArray.reverseArray(arr3)));
-        System.out.println("For call reverseArray(arr4 = " + Arrays.toString(arr4) + "), result is arr4 = " + Arrays.toString(ReverseArray.reverseArray(arr4)));
-        System.out.println("For call reverseArray(arr5 = " + Arrays.toString(arr5) + "), result is arr5 = " + Arrays.toString(ReverseArray.reverseArray(arr5)));
+        System.out.println("For call reverseArray(r1 = " + Arrays.toString(r1) + "), result is r1 = " + Arrays.toString(ReverseArray.reverseArray(r1)));
+        System.out.println("For call reverseArray(r2 = " + Arrays.toString(r2) + "), result is r2 = " + Arrays.toString(ReverseArray.reverseArray(r2)));
+        System.out.println("For call reverseArray(r3 = " + Arrays.toString(r3) + "), result is r3 = " + Arrays.toString(ReverseArray.reverseArray(r3)));
+        System.out.println("For call reverseArray(r4 = " + Arrays.toString(r4) + "), result is r4 = " + Arrays.toString(ReverseArray.reverseArray(r4)));
+        System.out.println("For call reverseArray(r5 = " + Arrays.toString(r5) + "), result is r5 = " + Arrays.toString(ReverseArray.reverseArray(r5)));
         
                    
         // DigitTracker  
@@ -87,6 +104,37 @@ public class App {
         System.out.println("For call smallest(arr = " + Arrays.toString(k4) + "), result is " + Smallest.smallest(k4) + ".\tExpecting: " + 7);
         System.out.println("For call smallest(arr = " + Arrays.toString(k5) + "), result is " + Smallest.smallest(k5) + ".\tExpecting: " + 0);
         System.out.println("For call smallest(arr = " + Arrays.toString(k6) + "), result is " + Smallest.smallest(k6) + ".\tExpecting: " + 0);
+
+        
+        // MaxEven
+        System.out.println("For call maxEven(arr1 = " + Arrays.toString(arr1) + "), result is " + MaxEven.maxEven(arr1));
+        System.out.println("For call maxEven(arr2 = " + Arrays.toString(arr2) + "), result is " + MaxEven.maxEven(arr2));
+        System.out.println("For call maxEven(arr3 = " + Arrays.toString(arr3) + "), result is " + MaxEven.maxEven(arr3));
+        System.out.println("For call maxEven(arr4 = " + Arrays.toString(arr4) + "), result is " + MaxEven.maxEven(arr4));
+        System.out.println("For call maxEven(arr5 = " + Arrays.toString(arr5) + "), result is " + MaxEven.maxEven(arr5));
+        
+
+        // TwoAscendingArray
+        System.out.println("For call twoAscending(arr1 = " + Arrays.toString(arr1) + "), result is " + TwoAscendingArray.twoAscending(arr1));
+        System.out.println("For call twoAscending(arr2 = " + Arrays.toString(arr2) + "), result is " + TwoAscendingArray.twoAscending(arr2));
+        System.out.println("For call twoAscending(arr3 = " + Arrays.toString(arr3) + "), result is " + TwoAscendingArray.twoAscending(arr3));
+        System.out.println("For call twoAscending(arr4 = " + Arrays.toString(arr4) + "), result is " + TwoAscendingArray.twoAscending(arr4));
+        System.out.println("For call twoAscending(arr5 = " + Arrays.toString(arr5) + "), result is " + TwoAscendingArray.twoAscending(arr5));
+
+
+        // ZigZag
+        System.out.println("For call zigZag(arr1 = " + Arrays.toString(arr1) + "), result is " + ZigZag.zigzag(arr1));
+        System.out.println("For call zigZag(arr2 = " + Arrays.toString(arr2) + "), result is " + ZigZag.zigzag(arr2));
+        System.out.println("For call zigZag(arr3 = " + Arrays.toString(arr3) + "), result is " + ZigZag.zigzag(arr3));
+        System.out.println("For call zigZag(arr4 = " + Arrays.toString(arr4) + "), result is " + ZigZag.zigzag(arr4));
+        System.out.println("For call zigZag(arr5 = " + Arrays.toString(arr5) + "), result is " + ZigZag.zigzag(arr5));
+
+
+        // QuadPrime
+        System.out.println("For call quadPrime(qP1 = " + Arrays.toString(qP1) + "), result is " + QuadPrime.quadPrime(qP1));
+        System.out.println("For call quadPrime(qP2 = " + Arrays.toString(qP2) + "), result is " + QuadPrime.quadPrime(qP2));
+        System.out.println("For call quadPrime(qP3 = " + Arrays.toString(qP3) + "), result is " + QuadPrime.quadPrime(qP3));
+        System.out.println("For call quadPrime(qP4 = " + Arrays.toString(qP4) + "), result is " + QuadPrime.quadPrime(qP4));
 
         
         // Palindrome
