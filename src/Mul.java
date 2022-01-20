@@ -1,3 +1,8 @@
+/**
+ * This method returns the multiplication result
+ * of all values of the given array.
+ */
+
 public class Mul {
 
     public static double mul(double[] a) {
