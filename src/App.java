@@ -52,9 +52,25 @@ public class App {
         int[] qP1 = { 3, 7, 11, 19, 19, 7, 11, 3, 11, 3, 19, 7 };
         int[] qP2 = { 3, 7, 11, 19, 3, 19, 11, 3, 11, 3, 19, 7 };
         int[] qP3 = { 3, 7, 11, 19, 13, 19, 11, 3, 11, 3, 19, 7 };
-        int[] qP4 = {3, 7 ,11, 19};
+        int[] qP4 = { 3, 7, 11, 19 };
+        
+        int[][] mm1 = { { 7, 4, 2, 3 }, { 1, 3, 4, 3 }, { 5, 6, 9, 8 } };
+        int[][] mm2 = { { 7, 2 }, { 9, 3 } };
+        int[][] mm3 = { { 1, -3, 2 } };
+        int[][] mm4 = { { 7, 4 }, { 1, 3 }, { 15, 6 } };
+ 
+        
+        
+        
+        // SumNum
+        System.out.println("For call sumNum(a = " + Arrays.toString(arr1) + " targetSum = 15), result is " + SumNum.sumNum(arr1, 15));
+        System.out.println("For call sumNum(a = " + Arrays.toString(arr1) + " targetSum = 45), result is " + SumNum.sumNum(arr1, 45));
+        System.out.println("For call sumNum(a = " + Arrays.toString(arr1) + " targetSum = 46), result is " + SumNum.sumNum(arr1, 46));
+        System.out.println("For call sumNum(a = " + Arrays.toString(arr5) + " targetSum = 128), result is " + SumNum.sumNum(arr5, 128));
+        System.out.println("For call sumNum(a = " + Arrays.toString(arr5) + " targetSum = 131), result is " + SumNum.sumNum(arr5, 131));
+        System.out.println("For call sumNum(a = " + Arrays.toString(arr5) + " targetSum = 241), result is " + SumNum.sumNum(arr5, 241));
 
-         
+        
         // Mul
         System.out.println("For call mul(a = " + Arrays.toString(a) + "), result is " + Mul.mul(a));
         System.out.println("For call mul(b = " + Arrays.toString(b) + "), result is " + Mul.mul(b));
@@ -137,6 +153,13 @@ public class App {
         System.out.println("For call quadPrime(qP4 = " + Arrays.toString(qP4) + "), result is " + QuadPrime.quadPrime(qP4));
 
         
+        // MatMax
+        System.out.println("For call matMax(mm1), result is " + MatMax.matMax(mm1)); App.print2DArray(mm1);
+        System.out.println("For call matMax(mm2), result is " + MatMax.matMax(mm2)); App.print2DArray(mm2);
+        System.out.println("For call matMax(mm3), result is " + MatMax.matMax(mm3)); App.print2DArray(mm3);
+        System.out.println("For call matMax(mm4), result is " + MatMax.matMax(mm4)); App.print2DArray(mm4);
+        
+        
         // Palindrome
         System.out.println(Palindrome.isPalindrome(arr1));
         System.out.println(Palindrome.isPalindrome(arr2));
@@ -169,11 +192,19 @@ public class App {
         System.out.println("For call upString(\"dca\"), result is " + UpString.upString("dca"));
         System.out.println("For call upString(\"d\"), result is " + UpString.upString("d"));
         System.out.println("For call upString(\"\"), result is " + UpString.upString(""));
-
+        
 
         // IsStringOK
         System.out.println("For call isStringOk(\"abcAbc\"), result is " + IsStringOK.isStringOK("abcAbc"));
         System.out.println("For call isStringOk(\"ab78\"), result is " + IsStringOK.isStringOK("ab78"));
         System.out.println("For call isStringOk(\"785\"), result is " + IsStringOK.isStringOK("785"));
+    }
+    
+    private static void print2DArray(int[][] _2DArray) {
+        for (int i = 0; i < _2DArray.length; i++) {
+            System.out.println(Arrays.toString(_2DArray[i]));
+        }
+        
+        System.out.println();
     }
 }

@@ -1,6 +1,6 @@
 /**
- * upString is a recursive method that checks
- * if a string contains characters in ascending order.
+ * upString is a recursive method that checks if a string's characters 
+ * are ordered in an ascending order.
  */
 
 public class UpString {
