@@ -59,9 +59,22 @@ public class App {
         int[][] mm3 = { { 1, -3, 2 } };
         int[][] mm4 = { { 7, 4 }, { 1, 3 }, { 15, 6 } };
  
+        boolean[] disco1 = {true, false, false, true, false};
+        boolean[] disco2 = {true, true, true, true, true};
+     
+
+
+
         
+
         
+        Q4 Queen = new Q4();
+        Queen.solveNQ();
+
+        // Disco
+        System.out.println("For call disco(a = " + Arrays.toString(disco1) + ", b = " + Arrays.toString(disco2) + ", i = 0), result is " + Disco.disco(disco1, disco2, 0));
         
+
         // SumNum
         System.out.println("For call sumNum(a = " + Arrays.toString(arr1) + " targetSum = 15), result is " + SumNum.sumNum(arr1, 15));
         System.out.println("For call sumNum(a = " + Arrays.toString(arr1) + " targetSum = 45), result is " + SumNum.sumNum(arr1, 45));
