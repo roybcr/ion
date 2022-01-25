@@ -1,7 +1,3 @@
-/**
- * 
- */
-
 public class Disco {
     public static boolean disco(boolean[] a, boolean[] b, int i) {
         if (equalArrays(a, b, 0)) {
@@ -11,13 +7,6 @@ public class Disco {
 		if (i == a.length) {
 			return false;
 		}
-		
-		int f = 0b10111;
-		String d = Integer.toBinaryString(239);
-		String r = Integer.toBinaryString(839);
-		System.out.println("F " + f);
-		f >>>= 0b1001;
-		System.out.println("F " + f + ", d " + d + ", r " + r);
         press(a, i);
 
         if (disco(a, b, i + 1)) {
