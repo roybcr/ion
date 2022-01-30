@@ -62,7 +62,6 @@ public class App {
  
         boolean[] disco1 = {true, false, false, true, false};
         boolean[] disco2 = {true, true, true, true, true};
-        
 
         // Disco
         System.out.printf("For call disco(a = %s, b = %s, i = %d), Result is: %b.\n",
@@ -207,6 +206,13 @@ public class App {
         System.out.println("For call isStringOk(\"abcAbc\"), Result is: " + IsStringOK.isStringOK("abcAbc"));
         System.out.println("For call isStringOk(\"ab78\"), Result is: " + IsStringOK.isStringOK("ab78"));
         System.out.println("For call isStringOk(\"785\"), Result is: " + IsStringOK.isStringOK("785"));
+    
+
+        System.out.println("For call twoAlternateStrings(\"abcde\", \"xyz\"), Result is: \"" + TwoAlternateStrings.twoAlternateStrings("abcde", "xyz") + "\"");
+        System.out.println("For call twoAlternateStrings(\"abc\", \"xyz\"), Result is: \"" + TwoAlternateStrings.twoAlternateStrings("abc", "xyz") + "\"");
+        System.out.println("For call twoAlternateStrings(\"xyz\", \"abcde\"), Result is: \"" + TwoAlternateStrings.twoAlternateStrings("xyz", "abcde") + "\"");
+        System.out.println("For call twoAlternateStrings(\"abcde\", \"\"), Result is: \"" + TwoAlternateStrings.twoAlternateStrings("abcde", "") + "\"");
+        System.out.println("For call twoAlternateStrings(\"\", \"\"), Result is: \"" + TwoAlternateStrings.twoAlternateStrings("", "") + "\"");
     }
     
     private static void print2DArray(int[][] _2DArray) {
